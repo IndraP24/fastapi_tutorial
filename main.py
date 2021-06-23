@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 import uvicorn
-
+# gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
 
 app = FastAPI()
 
